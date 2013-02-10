@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  station: 1
+  period_start: 2012-12-21
+  period_end: 2012-12-21
+  amount_paid: 1
+  balance_amount: 1
+  receipt_number: MyString
+  account_id: 1
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString
+
+two:
+  station: 1
+  period_start: 2012-12-21
+  period_end: 2012-12-21
+  amount_paid: 1
+  balance_amount: 1
+  receipt_number: MyString
+  account_id: 1
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString

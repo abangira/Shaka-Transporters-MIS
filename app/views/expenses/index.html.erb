@@ -1,0 +1,45 @@
+<h1>Listing expenses</h1>
+
+<table>
+  <tr>
+    <th>Supplier</th>
+    <th>Invoice number</th>
+    <th>Item</th>
+    <th>Quantity</th>
+    <th>Unit price</th>
+    <th>Total amount</th>
+    <th>Payment method</th>
+    <th>Payment status</th>
+    <th>Account affected</th>
+    <th>Purchased by</th>
+    <th>Authorized by</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expenses.each do |expense| %>
+  <tr>
+    <td><%= expense.supplier %></td>
+    <td><%= expense.invoice_number %></td>
+    <td><%= expense.item %></td>
+    <td><%= expense.quantity %></td>
+    <td><%= expense.unit_price %></td>
+    <td><%= expense.total_amount %></td>
+    <td><%= expense.payment_method %></td>
+    <td><%= expense.payment_status %></td>
+    <td><%= expense.account_affected %></td>
+    <td><%= expense.purchased_by %></td>
+    <td><%= expense.authorized_by %></td>
+    <td><%= expense.comments %></td>
+    <td><%= link_to 'Show', expense %></td>
+    <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expense', new_expense_path %>

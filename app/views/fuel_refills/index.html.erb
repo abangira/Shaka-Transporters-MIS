@@ -1,0 +1,39 @@
+<h1>Listing fuel_refills</h1>
+
+<table>
+  <tr>
+    <th>Vehicle number</th>
+    <th>Station</th>
+    <th>Litres</th>
+    <th>Price</th>
+    <th>Amount</th>
+    <th>Receipt number</th>
+    <th>Card number</th>
+    <th>Account</th>
+    <th>Skip rails admin initializer=false</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fuel_refills.each do |fuel_refill| %>
+  <tr>
+    <td><%= fuel_refill.vehicle_number %></td>
+    <td><%= fuel_refill.station %></td>
+    <td><%= fuel_refill.litres %></td>
+    <td><%= fuel_refill.price %></td>
+    <td><%= fuel_refill.amount %></td>
+    <td><%= fuel_refill.receipt_number %></td>
+    <td><%= fuel_refill.card_number %></td>
+    <td><%= fuel_refill.account_id %></td>
+    <td><%= fuel_refill.SKIP_RAILS_ADMIN_INITIALIZER=false %></td>
+    <td><%= link_to 'Show', fuel_refill %></td>
+    <td><%= link_to 'Edit', edit_fuel_refill_path(fuel_refill) %></td>
+    <td><%= link_to 'Destroy', fuel_refill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fuel refill', new_fuel_refill_path %>

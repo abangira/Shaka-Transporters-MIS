@@ -1,0 +1,53 @@
+<%= form_for(@fuel_refill) do |f| %>
+  <% if @fuel_refill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fuel_refill.errors.count, "error") %> prohibited this fuel_refill from being saved:</h2>
+
+      <ul>
+      <% @fuel_refill.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vehicle_number %><br />
+    <%= f.text_field :vehicle_number %>
+  </div>
+  <div class="field">
+    <%= f.label :station %><br />
+    <%= f.number_field :station %>
+  </div>
+  <div class="field">
+    <%= f.label :litres %><br />
+    <%= f.text_field :litres %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :receipt_number %><br />
+    <%= f.text_field :receipt_number %>
+  </div>
+  <div class="field">
+    <%= f.label :card_number %><br />
+    <%= f.text_field :card_number %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br />
+    <%= f.number_field :account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :SKIP_RAILS_ADMIN_INITIALIZER=false %><br />
+    <%= f.text_field :SKIP_RAILS_ADMIN_INITIALIZER=false %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

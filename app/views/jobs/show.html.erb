@@ -1,0 +1,116 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Driver name:</b>
+  <%= @job.driver_name %>
+</p>
+
+<p>
+  <b>Vehicle number:</b>
+  <%= @job.vehicle_number %>
+</p>
+
+<p>
+  <b>Previous route:</b>
+  <%= @job.previous_route %>
+</p>
+
+<p>
+  <b>Days:</b>
+  <%= @job.days %>
+</p>
+
+<p>
+  <b>Fuel:</b>
+  <%= @job.fuel %>
+</p>
+
+<p>
+  <b>Price per litre:</b>
+  <%= @job.price_per_litre %>
+</p>
+
+<p>
+  <b>Receipt number:</b>
+  <%= @job.receipt_number %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @job.amount %>
+</p>
+
+<p>
+  <b>Fuel payment method:</b>
+  <%= @job.fuel_payment_method %>
+</p>
+
+<p>
+  <b>Station:</b>
+  <%= @job.station %>
+</p>
+
+<p>
+  <b>Route given:</b>
+  <%= @job.route_given %>
+</p>
+
+<p>
+  <b>Departure date:</b>
+  <%= @job.departure_date %>
+</p>
+
+<p>
+  <b>Change of route:</b>
+  <%= @job.change_of_route %>
+</p>
+
+<p>
+  <b>Allowance:</b>
+  <%= @job.allowance %>
+</p>
+
+<p>
+  <b>Job date:</b>
+  <%= @job.job_date %>
+</p>
+
+<p>
+  <b>Document number:</b>
+  <%= @job.document_number %>
+</p>
+
+<p>
+  <b>Job details:</b>
+  <%= @job.job_details %>
+</p>
+
+<p>
+  <b>Weight in tons:</b>
+  <%= @job.weight_in_tons %>
+</p>
+
+<p>
+  <b>Job rate:</b>
+  <%= @job.job_rate %>
+</p>
+
+<p>
+  <b>Job amount:</b>
+  <%= @job.job_amount %>
+</p>
+
+<p>
+  <b>Job payment method:</b>
+  <%= @job.job_payment_method %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%= @job.client %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

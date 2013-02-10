@@ -1,0 +1,66 @@
+<h1>Listing jobs</h1>
+
+<table>
+  <tr>
+    <th>Driver name</th>
+    <th>Vehicle number</th>
+    <th>Previous route</th>
+    <th>Days</th>
+    <th>Fuel</th>
+    <th>Price per litre</th>
+    <th>Receipt number</th>
+    <th>Amount</th>
+    <th>Fuel payment method</th>
+    <th>Station</th>
+    <th>Route given</th>
+    <th>Departure date</th>
+    <th>Change of route</th>
+    <th>Allowance</th>
+    <th>Job date</th>
+    <th>Document number</th>
+    <th>Job details</th>
+    <th>Weight in tons</th>
+    <th>Job rate</th>
+    <th>Job amount</th>
+    <th>Job payment method</th>
+    <th>Client</th>
+    <th>Skip rails admin initializer=false</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%= job.driver_name %></td>
+    <td><%= job.vehicle_number %></td>
+    <td><%= job.previous_route %></td>
+    <td><%= job.days %></td>
+    <td><%= job.fuel %></td>
+    <td><%= job.price_per_litre %></td>
+    <td><%= job.receipt_number %></td>
+    <td><%= job.amount %></td>
+    <td><%= job.fuel_payment_method %></td>
+    <td><%= job.station %></td>
+    <td><%= job.route_given %></td>
+    <td><%= job.departure_date %></td>
+    <td><%= job.change_of_route %></td>
+    <td><%= job.allowance %></td>
+    <td><%= job.job_date %></td>
+    <td><%= job.document_number %></td>
+    <td><%= job.job_details %></td>
+    <td><%= job.weight_in_tons %></td>
+    <td><%= job.job_rate %></td>
+    <td><%= job.job_amount %></td>
+    <td><%= job.job_payment_method %></td>
+    <td><%= job.client %></td>
+    <td><%= link_to 'Show', job %></td>
+    <td><%= link_to 'Edit', edit_job_path(job) %></td>
+    <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Job', new_job_path %>

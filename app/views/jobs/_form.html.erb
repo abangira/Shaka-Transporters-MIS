@@ -1,0 +1,106 @@
+<%= form_for(@job) do |f| %>
+  <% if @job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
+
+      <ul>
+      <% @job.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :driver_name %><br />
+    <%= f.text_field :driver_name %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_number %><br />
+    <%= f.text_field :vehicle_number %>
+  </div>
+  <div class="field">
+    <%= f.label :previous_route %><br />
+    <%= f.text_field :previous_route %>
+  </div>
+  <div class="field">
+    <%= f.label :days %><br />
+    <%= f.number_field :days %>
+  </div>
+  <div class="field">
+    <%= f.label :fuel %><br />
+    <%= f.text_field :fuel %>
+  </div>
+  <div class="field">
+    <%= f.label :price_per_litre %><br />
+    <%= f.number_field :price_per_litre %>
+  </div>
+  <div class="field">
+    <%= f.label :receipt_number %><br />
+    <%= f.text_field :receipt_number %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :fuel_payment_method %><br />
+    <%= f.text_field :fuel_payment_method %>
+  </div>
+  <div class="field">
+    <%= f.label :station %><br />
+    <%= f.text_field :station %>
+  </div>
+  <div class="field">
+    <%= f.label :route_given %><br />
+    <%= f.text_field :route_given %>
+  </div>
+  <div class="field">
+    <%= f.label :departure_date %><br />
+    <%= f.date_select :departure_date %>
+  </div>
+  <div class="field">
+    <%= f.label :change_of_route %><br />
+    <%= f.check_box :change_of_route %>
+  </div>
+  <div class="field">
+    <%= f.label :allowance %><br />
+    <%= f.number_field :allowance %>
+  </div>
+  <div class="field">
+    <%= f.label :job_date %><br />
+    <%= f.date_select :job_date %>
+  </div>
+  <div class="field">
+    <%= f.label :document_number %><br />
+    <%= f.text_field :document_number %>
+  </div>
+  <div class="field">
+    <%= f.label :job_details %><br />
+    <%= f.text_field :job_details %>
+  </div>
+  <div class="field">
+    <%= f.label :weight_in_tons %><br />
+    <%= f.text_field :weight_in_tons %>
+  </div>
+  <div class="field">
+    <%= f.label :job_rate %><br />
+    <%= f.number_field :job_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :job_amount %><br />
+    <%= f.number_field :job_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :job_payment_method %><br />
+    <%= f.text_field :job_payment_method %>
+  </div>
+  <div class="field">
+    <%= f.label :client %><br />
+    <%= f.text_field :client %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vehicle_number: MyString
+  station: 1
+  litres: 9.99
+  price: 1
+  amount: 1
+  receipt_number: MyString
+  card_number: MyString
+  account_id: 1
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString
+
+two:
+  vehicle_number: MyString
+  station: 1
+  litres: 9.99
+  price: 1
+  amount: 1
+  receipt_number: MyString
+  card_number: MyString
+  account_id: 1
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString

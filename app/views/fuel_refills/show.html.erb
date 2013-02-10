@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vehicle number:</b>
+  <%= @fuel_refill.vehicle_number %>
+</p>
+
+<p>
+  <b>Station:</b>
+  <%= @fuel_refill.station %>
+</p>
+
+<p>
+  <b>Litres:</b>
+  <%= @fuel_refill.litres %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @fuel_refill.price %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @fuel_refill.amount %>
+</p>
+
+<p>
+  <b>Receipt number:</b>
+  <%= @fuel_refill.receipt_number %>
+</p>
+
+<p>
+  <b>Card number:</b>
+  <%= @fuel_refill.card_number %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @fuel_refill.account_id %>
+</p>
+
+<p>
+  <b>Skip rails admin initializer=false:</b>
+  <%= @fuel_refill.SKIP_RAILS_ADMIN_INITIALIZER=false %>
+</p>
+
+
+<%= link_to 'Edit', edit_fuel_refill_path(@fuel_refill) %> |
+<%= link_to 'Back', fuel_refills_path %>

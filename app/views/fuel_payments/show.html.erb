@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Station:</b>
+  <%= @fuel_payment.station %>
+</p>
+
+<p>
+  <b>Period start:</b>
+  <%= @fuel_payment.period_start %>
+</p>
+
+<p>
+  <b>Period end:</b>
+  <%= @fuel_payment.period_end %>
+</p>
+
+<p>
+  <b>Amount paid:</b>
+  <%= @fuel_payment.amount_paid %>
+</p>
+
+<p>
+  <b>Balance amount:</b>
+  <%= @fuel_payment.balance_amount %>
+</p>
+
+<p>
+  <b>Receipt number:</b>
+  <%= @fuel_payment.receipt_number %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @fuel_payment.account_id %>
+</p>
+
+<p>
+  <b>Skip rails admin initializer=false:</b>
+  <%= @fuel_payment.SKIP_RAILS_ADMIN_INITIALIZER=false %>
+</p>
+
+
+<%= link_to 'Edit', edit_fuel_payment_path(@fuel_payment) %> |
+<%= link_to 'Back', fuel_payments_path %>

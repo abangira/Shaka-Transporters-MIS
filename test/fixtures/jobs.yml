@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  driver_name: MyString
+  vehicle_number: MyString
+  previous_route: MyString
+  days: 1
+  fuel: 1.5
+  price_per_litre: 1
+  receipt_number: MyString
+  amount: 1
+  fuel_payment_method: MyString
+  station: MyString
+  route_given: MyString
+  departure_date: 2012-12-10
+  change_of_route: false
+  allowance: 1
+  job_date: 2012-12-10
+  document_number: MyString
+  job_details: MyString
+  weight_in_tons: 1.5
+  job_rate: 1
+  job_amount: 1
+  job_payment_method: MyString
+  client: MyString
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString
+
+two:
+  driver_name: MyString
+  vehicle_number: MyString
+  previous_route: MyString
+  days: 1
+  fuel: 1.5
+  price_per_litre: 1
+  receipt_number: MyString
+  amount: 1
+  fuel_payment_method: MyString
+  station: MyString
+  route_given: MyString
+  departure_date: 2012-12-10
+  change_of_route: false
+  allowance: 1
+  job_date: 2012-12-10
+  document_number: MyString
+  job_details: MyString
+  weight_in_tons: 1.5
+  job_rate: 1
+  job_amount: 1
+  job_payment_method: MyString
+  client: MyString
+  SKIP_RAILS_ADMIN_INITIALIZER=false: MyString

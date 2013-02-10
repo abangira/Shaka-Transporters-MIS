@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Supplier:</b>
+  <%= @expense.supplier %>
+</p>
+
+<p>
+  <b>Invoice number:</b>
+  <%= @expense.invoice_number %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @expense.item %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @expense.quantity %>
+</p>
+
+<p>
+  <b>Unit price:</b>
+  <%= @expense.unit_price %>
+</p>
+
+<p>
+  <b>Total amount:</b>
+  <%= @expense.total_amount %>
+</p>
+
+<p>
+  <b>Payment method:</b>
+  <%= @expense.payment_method %>
+</p>
+
+<p>
+  <b>Payment status:</b>
+  <%= @expense.payment_status %>
+</p>
+
+<p>
+  <b>Account affected:</b>
+  <%= @expense.account_affected %>
+</p>
+
+<p>
+  <b>Purchased by:</b>
+  <%= @expense.purchased_by %>
+</p>
+
+<p>
+  <b>Authorized by:</b>
+  <%= @expense.authorized_by %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @expense.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>

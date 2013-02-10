@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  supplier: MyString
+  invoice_number: MyString
+  item: MyString
+  quantity: 1
+  unit_price: 1
+  total_amount: 1
+  payment_method: MyString
+  payment_status: MyString
+  account_affected: MyString
+  purchased_by: MyString
+  authorized_by: MyString
+  comments: MyString
+
+two:
+  supplier: MyString
+  invoice_number: MyString
+  item: MyString
+  quantity: 1
+  unit_price: 1
+  total_amount: 1
+  payment_method: MyString
+  payment_status: MyString
+  account_affected: MyString
+  purchased_by: MyString
+  authorized_by: MyString
+  comments: MyString

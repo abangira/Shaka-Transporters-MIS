@@ -1,0 +1,37 @@
+<h1>Listing fuel_payments</h1>
+
+<table>
+  <tr>
+    <th>Station</th>
+    <th>Period start</th>
+    <th>Period end</th>
+    <th>Amount paid</th>
+    <th>Balance amount</th>
+    <th>Receipt number</th>
+    <th>Account</th>
+    <th>Skip rails admin initializer=false</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fuel_payments.each do |fuel_payment| %>
+  <tr>
+    <td><%= fuel_payment.station %></td>
+    <td><%= fuel_payment.period_start %></td>
+    <td><%= fuel_payment.period_end %></td>
+    <td><%= fuel_payment.amount_paid %></td>
+    <td><%= fuel_payment.balance_amount %></td>
+    <td><%= fuel_payment.receipt_number %></td>
+    <td><%= fuel_payment.account_id %></td>
+    <td><%= fuel_payment.SKIP_RAILS_ADMIN_INITIALIZER=false %></td>
+    <td><%= link_to 'Show', fuel_payment %></td>
+    <td><%= link_to 'Edit', edit_fuel_payment_path(fuel_payment) %></td>
+    <td><%= link_to 'Destroy', fuel_payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fuel payment', new_fuel_payment_path %>

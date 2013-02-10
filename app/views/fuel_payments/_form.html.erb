@@ -1,0 +1,49 @@
+<%= form_for(@fuel_payment) do |f| %>
+  <% if @fuel_payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fuel_payment.errors.count, "error") %> prohibited this fuel_payment from being saved:</h2>
+
+      <ul>
+      <% @fuel_payment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station %><br />
+    <%= f.number_field :station %>
+  </div>
+  <div class="field">
+    <%= f.label :period_start %><br />
+    <%= f.date_select :period_start %>
+  </div>
+  <div class="field">
+    <%= f.label :period_end %><br />
+    <%= f.date_select :period_end %>
+  </div>
+  <div class="field">
+    <%= f.label :amount_paid %><br />
+    <%= f.number_field :amount_paid %>
+  </div>
+  <div class="field">
+    <%= f.label :balance_amount %><br />
+    <%= f.number_field :balance_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :receipt_number %><br />
+    <%= f.text_field :receipt_number %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br />
+    <%= f.number_field :account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :SKIP_RAILS_ADMIN_INITIALIZER=false %><br />
+    <%= f.text_field :SKIP_RAILS_ADMIN_INITIALIZER=false %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

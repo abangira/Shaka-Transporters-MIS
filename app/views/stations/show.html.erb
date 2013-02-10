@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @station.name %>
+</p>
+
+<p>
+  <b>Contact details:</b>
+  <%= @station.contact_details %>
+</p>
+
+<p>
+  <b>Skip rails admin initializer=false:</b>
+  <%= @station.SKIP_RAILS_ADMIN_INITIALIZER=false %>
+</p>
+
+
+<%= link_to 'Edit', edit_station_path(@station) %> |
+<%= link_to 'Back', stations_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  garage: MyString
+  details_of_service: MyString
+  vehicle_number: MyString
+  invoice_number: MyString
+  amount: 1
+
+two:
+  garage: MyString
+  details_of_service: MyString
+  vehicle_number: MyString
+  invoice_number: MyString
+  amount: 1
