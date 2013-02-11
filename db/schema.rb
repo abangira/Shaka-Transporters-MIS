@@ -52,13 +52,13 @@ ActiveRecord::Schema.define(:version => 20130130123413) do
     t.string   "account"
     t.string   "vehicle_number"
     t.integer  "station"
-    t.decimal  "litres",         :precision => 10, :scale => 0
+    t.decimal  "litres"
     t.integer  "price"
     t.integer  "amount"
     t.string   "receipt_number"
     t.string   "card_number"
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "jobs", :force => true do |t|

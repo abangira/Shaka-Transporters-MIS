@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-gem 'mysql2'
+gem 'bootstrap-sass'
+#gem 'mysql2'
 gem 'cancan'
 
 
@@ -9,8 +10,9 @@ gem 'cancan'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rails_admin'
 gem 'paper_trail', '~> 2'
+gem 'heroku'
 
-gem 'sqlite3'
+gem 'pg'
 gem 'rails_admin_map_field', :git => 'git://github.com/jasonl/rails_admin_map_field.git'
 gem 'rich'
 gem 'paperclip'
