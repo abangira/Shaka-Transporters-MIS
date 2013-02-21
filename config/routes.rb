@@ -1,4 +1,7 @@
 ShakaCompany::Application.routes.draw do
+  resources :rent_payments
+
+
   get "static_pages/home"
 
   resources :fuel_payments

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130220073416) do
+ActiveRecord::Schema.define(:version => 20130221083130) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(:version => 20130220073416) do
     t.string   "comments"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "category"
+    t.string   "tin"
+    t.string   "vat"
   end
 
   create_table "fuel_payments", :force => true do |t|
@@ -57,9 +60,11 @@ ActiveRecord::Schema.define(:version => 20130220073416) do
     t.integer  "amount"
     t.string   "receipt_number"
     t.string   "order_number"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.date     "refill_date"
+    t.string   "subaccount"
+    t.text     "other_purchases"
   end
 
   create_table "jobs", :force => true do |t|
@@ -87,6 +92,24 @@ ActiveRecord::Schema.define(:version => 20130220073416) do
     t.string   "client"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+  end
+
+  create_table "rent_payments", :force => true do |t|
+    t.string   "property"
+    t.string   "invoice_number"
+    t.string   "tenant"
+    t.string   "category"
+    t.date     "period_start"
+    t.date     "period_end"
+    t.integer  "rate_per_unit"
+    t.integer  "total_amount"
+    t.boolean  "paid"
+    t.string   "payment_mode"
+    t.string   "payment_transaction_number"
+    t.string   "paid_by"
+    t.date     "payment_date"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "repairs", :force => true do |t|

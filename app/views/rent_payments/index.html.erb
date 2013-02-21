@@ -1,0 +1,47 @@
+<h1>Listing rent_payments</h1>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Invoice number</th>
+    <th>Tenant</th>
+    <th>Category</th>
+    <th>Period start</th>
+    <th>Period end</th>
+    <th>Rate per unit</th>
+    <th>Total amount</th>
+    <th>Paid</th>
+    <th>Payment mode</th>
+    <th>Payment transaction number</th>
+    <th>Paid by</th>
+    <th>Payment date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rent_payments.each do |rent_payment| %>
+  <tr>
+    <td><%= rent_payment.property %></td>
+    <td><%= rent_payment.invoice_number %></td>
+    <td><%= rent_payment.tenant %></td>
+    <td><%= rent_payment.category %></td>
+    <td><%= rent_payment.period_start %></td>
+    <td><%= rent_payment.period_end %></td>
+    <td><%= rent_payment.rate_per_unit %></td>
+    <td><%= rent_payment.total_amount %></td>
+    <td><%= rent_payment.paid %></td>
+    <td><%= rent_payment.payment_mode %></td>
+    <td><%= rent_payment.payment_transaction_number %></td>
+    <td><%= rent_payment.paid_by %></td>
+    <td><%= rent_payment.payment_date %></td>
+    <td><%= link_to 'Show', rent_payment %></td>
+    <td><%= link_to 'Edit', edit_rent_payment_path(rent_payment) %></td>
+    <td><%= link_to 'Destroy', rent_payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rent payment', new_rent_payment_path %>

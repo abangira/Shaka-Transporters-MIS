@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property: MyString
+  invoice_number: MyString
+  tenant: MyString
+  category: MyString
+  period_start: 2013-02-21
+  period_end: 2013-02-21
+  rate_per_unit: 1
+  total_amount: 1
+  paid: false
+  payment_mode: MyString
+  payment_transaction_number: MyString
+  paid_by: MyString
+  payment_date: 2013-02-21
+
+two:
+  property: MyString
+  invoice_number: MyString
+  tenant: MyString
+  category: MyString
+  period_start: 2013-02-21
+  period_end: 2013-02-21
+  rate_per_unit: 1
+  total_amount: 1
+  paid: false
+  payment_mode: MyString
+  payment_transaction_number: MyString
+  paid_by: MyString
+  payment_date: 2013-02-21

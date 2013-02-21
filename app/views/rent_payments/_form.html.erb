@@ -1,0 +1,69 @@
+<%= form_for(@rent_payment) do |f| %>
+  <% if @rent_payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rent_payment.errors.count, "error") %> prohibited this rent_payment from being saved:</h2>
+
+      <ul>
+      <% @rent_payment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :property %><br />
+    <%= f.text_field :property %>
+  </div>
+  <div class="field">
+    <%= f.label :invoice_number %><br />
+    <%= f.text_field :invoice_number %>
+  </div>
+  <div class="field">
+    <%= f.label :tenant %><br />
+    <%= f.text_field :tenant %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :period_start %><br />
+    <%= f.date_select :period_start %>
+  </div>
+  <div class="field">
+    <%= f.label :period_end %><br />
+    <%= f.date_select :period_end %>
+  </div>
+  <div class="field">
+    <%= f.label :rate_per_unit %><br />
+    <%= f.number_field :rate_per_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :total_amount %><br />
+    <%= f.number_field :total_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :paid %><br />
+    <%= f.check_box :paid %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_mode %><br />
+    <%= f.text_field :payment_mode %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_transaction_number %><br />
+    <%= f.text_field :payment_transaction_number %>
+  </div>
+  <div class="field">
+    <%= f.label :paid_by %><br />
+    <%= f.text_field :paid_by %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_date %><br />
+    <%= f.date_select :payment_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

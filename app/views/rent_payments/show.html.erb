@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Property:</b>
+  <%= @rent_payment.property %>
+</p>
+
+<p>
+  <b>Invoice number:</b>
+  <%= @rent_payment.invoice_number %>
+</p>
+
+<p>
+  <b>Tenant:</b>
+  <%= @rent_payment.tenant %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @rent_payment.category %>
+</p>
+
+<p>
+  <b>Period start:</b>
+  <%= @rent_payment.period_start %>
+</p>
+
+<p>
+  <b>Period end:</b>
+  <%= @rent_payment.period_end %>
+</p>
+
+<p>
+  <b>Rate per unit:</b>
+  <%= @rent_payment.rate_per_unit %>
+</p>
+
+<p>
+  <b>Total amount:</b>
+  <%= @rent_payment.total_amount %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @rent_payment.paid %>
+</p>
+
+<p>
+  <b>Payment mode:</b>
+  <%= @rent_payment.payment_mode %>
+</p>
+
+<p>
+  <b>Payment transaction number:</b>
+  <%= @rent_payment.payment_transaction_number %>
+</p>
+
+<p>
+  <b>Paid by:</b>
+  <%= @rent_payment.paid_by %>
+</p>
+
+<p>
+  <b>Payment date:</b>
+  <%= @rent_payment.payment_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_rent_payment_path(@rent_payment) %> |
+<%= link_to 'Back', rent_payments_path %>
