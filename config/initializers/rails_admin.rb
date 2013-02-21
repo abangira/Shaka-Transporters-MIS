@@ -5,11 +5,14 @@ RailsAdmin.config do |config|
   config.model Expense do
 	edit do
       field :supplier
+	  field :category
       field :invoice_number
+	  field :tin
       field :item
       field :quantity
       field :unit_price
       field :total_amount
+	  field :vat
       field :payment_method
       field :payment_status
       field :account_affected
